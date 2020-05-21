@@ -1,5 +1,6 @@
 :root {
     --btn-color: rgb(235, 235, 235);
+    --header-txt-color: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -10,6 +11,18 @@
 
 body {
     font-family: Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 
@@ -84,16 +97,51 @@ body {
 
 #languages a {
     margin: 0 3px;
-    text-decoration: none;
     color: #1a0dab;
-}
-
-#languages a:hover {
-    text-decoration: underline;
 }
 
 #languages a:visited {
     color: #609;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 22px;
+}
+
+#header-items {
+    display: flex;
+    align-items: center;
+}
+
+#header-items li {
+    margin: 0 10px;
+    font-size: 13.5px;
+    color: var(--header-txt-color);
+}
+
+#header-items li a:visited {
+    color: var(--header-txt-color);
+}
+
+#menu {
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+}
+
+#menu:hover {
+    opacity: 0.9;
+}
+
+#profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 
 
