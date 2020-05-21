@@ -1,3 +1,7 @@
+:root {
+    --btn-color: rgb(235, 235, 235);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +15,7 @@ body {
 
 #logo {
     width: 20%;
-    margin: 20vh auto 25px auto;
+    margin: 25vh auto 25px auto;
 }
 
 #logo img {
@@ -25,12 +29,71 @@ body {
 }
 
 #search-box {
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 15px 48%;
+    padding: 5px 45px;
+    font-size: 17px;
+    font-weight: 400;
     width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 15px;
-    border: 1px solid gray;
+    height: 42px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.2);
 }
 
+#search-box:hover {
+    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+#btns {
+    width: 50%;
+    margin: 30px auto;
+}
+
+[type='button'] {
+    cursor: pointer;
+    border: 1px solid var(--btn-color);
+    border-radius: 5px;
+    opacity: 0.6;
+    background: var(--btn-color);
+    font-size: 0.9em;
+    text-transform: capitalize;
+    padding: 0px 15px;
+    height: 36px;
+    max-width: 146px;
+}
+
+[type='button']:hover {
+    opacity: 0.8;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+[value='google search'] {
+    margin-right: 8px;
+}
+
+#languages {
+    font-size: 12px;
+    letter-spacing: 0.015em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#languages a {
+    margin: 0 3px;
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+#languages a:hover {
+    text-decoration: underline;
+}
+
+#languages a:visited {
+    color: #609;
+}
 
 
