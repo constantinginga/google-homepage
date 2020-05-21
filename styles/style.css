@@ -104,13 +104,16 @@ a:hover {
     color: #609;
 }
 
-#header {
+#header, #footer {
     position: fixed;
-    top: 0;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
     padding: 14px 22px;
+}
+
+#header {
+    top: 0;
+    justify-content: flex-end;
 }
 
 #header-items {
@@ -118,13 +121,13 @@ a:hover {
     align-items: center;
 }
 
-#header-items li {
+#header-items li, #about li, #terms li {
     margin: 0 10px;
     font-size: 13.5px;
     color: var(--header-txt-color);
 }
 
-#header-items li a:visited {
+#header-items li a:visited, #about li a:visited, #terms li a:visited {
     color: var(--header-txt-color);
 }
 
@@ -144,4 +147,37 @@ a:hover {
     border-radius: 50%;
 }
 
+#footer {
+    background: var(--btn-color);
+    bottom: 0;
+    flex-direction: column;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    font-size: 15px;
+}
 
+#footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    letter-spacing: 0.001em;
+}
+
+#about, #terms {
+    display: flex;
+}
+
+#country {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+#country p {
+    opacity: 0.5;
+    letter-spacing: 0.01em;
+    margin: 0 10px;
+}
+
+#about li a, #terms li a {
+    opacity: 0.7;
+    font-size: 14px;
+}
